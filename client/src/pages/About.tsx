@@ -129,16 +129,13 @@ export default function About() {
       {/* Our Story */}
       <section className="py-16 bg-muted/30">
         <div className="container max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Story</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">About Us</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              {APP_TITLE} was founded with a vision to create a welcoming place where people could encounter God's love and grow in their faith. Since our beginning, we have been committed to serving our community and making a positive impact in the lives of those around us.
+              The Holy Scripture is the only source and complete foundation of our faith, the only guideline in teaching and life. God through His prophets in the Old Testament and by the apostles in the New Testament has left with us all we need to know. The Bible contains the whole testimony of God whereunto nothing can be added like it is with a last will.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Over the years, we have grown from a small gathering to a vibrant community of believers. Through worship services, community outreach, youth programs, and mission work, we continue to live out our calling to love God and love others.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              We invite you to become part of our story. Whether you're exploring faith for the first time or looking for a church home, you are welcome here.
+              Only what the apostles left behind in the New Testament is indeed »apostolic teaching«. Only what the Bible truly teaches is »biblical«. Only what originates with Christ Himself is »Christian«. Statements of faith declared at different councils in the course of church history are rejected as additions and forgery of the original Word.
             </p>
           </div>
         </div>
