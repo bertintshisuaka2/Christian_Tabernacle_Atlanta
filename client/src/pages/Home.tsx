@@ -47,10 +47,10 @@ export default function Home() {
           <img 
             src="/bible-logo.png" 
             alt="Open Bible" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
           {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
         
         {/* Overlaid Text Content */}
