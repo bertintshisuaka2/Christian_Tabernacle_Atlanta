@@ -44,8 +44,8 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-background py-20 md:py-32">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Welcome to {APP_TITLE}
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground uppercase">
+              Christian Tabernacle of Atlanta
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               A place where faith meets fellowship, and everyone belongs.
