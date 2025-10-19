@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "./ui/button";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { getLoginUrl } from "@/const";
+import { APP_TITLE, APP_LOGO, getLoginUrl } from "@/const";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -34,11 +34,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center gap-3 cursor-pointer">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl">
-                  C
-                </div>
+                <img src={APP_LOGO} alt="Logo" className="w-10 h-10 object-contain" />
                 <span className="text-xl font-semibold text-foreground">
-                  Community Church
+                  {APP_TITLE}
                 </span>
               </div>
             </Link>
@@ -162,7 +160,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-semibold mb-4">Community Church</h3>
+              <h3 className="font-semibold mb-4">{APP_TITLE}</h3>
               <p className="text-sm text-muted-foreground">
                 A place of worship, fellowship, and community.
               </p>
@@ -224,17 +222,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-sm text-muted-foreground mb-2">
                 123 Church Street
                 <br />
-                City, State 12345
+                Atlanta, GA 30303
               </p>
               <p className="text-sm text-muted-foreground">
-                Email: info@communitychurch.org
+                Email: info@christiantabernacleatlanta.org
                 <br />
-                Phone: (555) 123-4567
+                Phone: (404) 555-1234
               </p>
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Community Church. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {APP_TITLE}. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { APP_TITLE } from "@/const";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Heart, BookOpen, Users, Clock, MapPin } from "lucide-react";
@@ -44,7 +45,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Welcome to Community Church
+              Welcome to {APP_TITLE}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               A place where faith meets fellowship, and everyone belongs.
@@ -207,9 +208,12 @@ export default function Home() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Join Us This Sunday
+            Join Us This Weekend
           </h2>
           <p className="text-xl mb-8 opacity-90">
+            Saturday 6:00 PM - 8:00 PM | Sunday 10:00 AM - 1:00 PM
+          </p>
+          <p className="text-lg mb-8 opacity-90">
             Experience worship, community, and hope. Everyone is welcome.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

@@ -77,7 +77,7 @@ export default function Contact() {
                   <p className="text-sm text-muted-foreground">
                     123 Church Street
                     <br />
-                    City, State 12345
+                    Atlanta, GA 30303
                     <br />
                     United States
                   </p>
@@ -93,7 +93,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    (555) 123-4567
+                    (404) 555-1234
                   </p>
                 </CardContent>
               </Card>
@@ -107,7 +107,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    info@communitychurch.org
+                    info@christiantabernacleatlanta.org
                   </p>
                 </CardContent>
               </Card>

@@ -1,3 +1,4 @@
+import { APP_TITLE } from "@/const";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -45,7 +46,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Community Church, our mission is to know Christ and make Him known. We are a community of believers dedicated to worshiping God, growing in faith, and serving others with love and compassion. We welcome people from all walks of life to join us on this journey of faith.
+              At {APP_TITLE}, our mission is to know Christ and make Him known. We are a community of believers dedicated to worshiping God, growing in faith, and serving others with love and compassion. We welcome people from all walks of life to join us on this journey of faith.
             </p>
           </div>
         </div>
@@ -131,7 +132,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center mb-8">Our Story</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Community Church was founded with a vision to create a welcoming place where people could encounter God's love and grow in their faith. Since our beginning, we have been committed to serving our community and making a positive impact in the lives of those around us.
+              {APP_TITLE} was founded with a vision to create a welcoming place where people could encounter God's love and grow in their faith. Since our beginning, we have been committed to serving our community and making a positive impact in the lives of those around us.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Over the years, we have grown from a small gathering to a vibrant community of believers. Through worship services, community outreach, youth programs, and mission work, we continue to live out our calling to love God and love others.

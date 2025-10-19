@@ -1,0 +1,8 @@
+{
+  "query": "UPDATE church_info SET \n  name = 'Christian Tabernacle of Atlanta',\n  tagline = 'A place where faith meets fellowship',\n  description = 'Welcome to Christian Tabernacle of Atlanta, where we believe in the power of community, faith, and service. Join us as we grow together in Christ.',\n  address = '123 Church Street, Atlanta, GA 30303',\n  phone = '(404) 555-1234',\n  email = 'info@christiantabernacleatlanta.org'\nWHERE id IS NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 1bm1SSQvxoeV96i.160927ff58d9 --database AuAtMV59MVejHYrEAT77w2 --execute UPDATE church_info SET \n  name = 'Christian Tabernacle of Atlanta',\n  tagline = 'A place where faith meets fellowship',\n  description = 'Welcome to Christian Tabernacle of Atlanta, where we believe in the power of community, faith, and service. Join us as we grow together in Christ.',\n  address = '123 Church Street, Atlanta, GA 30303',\n  phone = '(404) 555-1234',\n  email = 'info@christiantabernacleatlanta.org'\nWHERE id IS NOT NULL;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'auatmv59mvejhyreat77w2.church_info' doesn't exist"
+  ]
+}
