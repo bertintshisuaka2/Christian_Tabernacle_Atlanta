@@ -43,20 +43,29 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-background py-20 md:py-32">
         <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground uppercase">
-              Christian Tabernacle of Atlanta
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              A place where faith meets fellowship, and everyone belongs.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild>
-                <Link href="/about">Learn More</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/events">Upcoming Events</Link>
-              </Button>
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground uppercase">
+                Christian Tabernacle of Atlanta
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+                A place where faith meets fellowship, and everyone belongs.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Button size="lg" asChild>
+                  <Link href="/about">Learn More</Link>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="/events">Upcoming Events</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="flex-shrink-0">
+              <img 
+                src="/bible-logo.png" 
+                alt="Open Bible" 
+                className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg shadow-2xl"
+              />
             </div>
           </div>
         </div>
