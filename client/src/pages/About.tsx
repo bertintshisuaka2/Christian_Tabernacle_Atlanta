@@ -2,14 +2,14 @@ import { APP_TITLE } from "@/const";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Heart, Users, BookOpen, Globe } from "lucide-react";
+import { Bird, Users, BookOpen, Globe } from "lucide-react";
 
 export default function About() {
   const values = [
     {
-      icon: Heart,
-      title: "Love & Compassion",
-      description: "We believe in showing God's love through compassion and service to all people.",
+      icon: Bird,
+      title: "The End Time Message",
+      description: "William Marrion Branham: William Branham and his prophetic ministry in the end-time. We claim to believe as the Holy Scripture says and acknowledge with thankful hearts that we are now living close to the second coming of Christ.",
     },
     {
       icon: Users,
@@ -55,7 +55,7 @@ export default function About() {
       {/* Our Values */}
       <section className="py-16 bg-muted/30">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">The Prophetic and Apostolic Ministry</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value) => (
               <Card key={value.title}>
@@ -141,8 +141,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* William Branham Ministry */}
       <section className="py-16">
+        <div className="container max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8">William Branham and His Prophetic Ministry in the End-Time</h2>
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              We claim to believe as the Holy Scripture says and acknowledge with thankful hearts that we are now living close to the second coming of Christ. We see Bible prophecies fulfilled as it was at His first coming. The New Testament began with the fulfilment of scriptural prophecies and ends the same way.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              The promise that a voice would cry in the wilderness (Isa. 40:3) and that the Lord would send His messenger to prepare His way (Mal. 3:1) became a living reality in the ministry of John the Baptist. This we find confirmed in Mt. 11:10; Mk. 1:1-4; Lk. 1:16-17; Jn. 1:19-28.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-muted/30">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Visit?</h2>
           <p className="text-lg text-muted-foreground mb-8">
