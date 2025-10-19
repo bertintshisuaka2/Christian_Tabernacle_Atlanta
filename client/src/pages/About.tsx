@@ -176,13 +176,13 @@ export default function About() {
           </div>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Nous vous exhortons à prendre garde à ces ministères que Dieu a suscité parmi Son peuple, en sachant que Dieu ne se repent pas de ses dons, ni de son appel (Romains 11.29). Mais nous ne voulons pas nous arrêter à un ministère particulier, ou à son représentant, mais nous devons prendre en considération tous les ministères de la Parole auxquels Dieu a pourvu, servant à notre perfectionnement selon ce qu'il est écrit dans Ephésiens 4, versets 11 à 15:
+              We exhort you to pay attention to these ministries that God has raised up among His people, knowing that God does not repent of His gifts or His calling (Romans 11:29). But we do not want to stop at a particular ministry, or its representative, but we must take into consideration all the ministries of the Word that God has provided, serving for our perfection according to what is written in Ephesians 4, verses 11 to 15:
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4 italic">
-              "Et il a donné les uns comme apôtres, les autres comme prophètes, les autres comme évangélistes, les autres comme pasteurs et docteurs, pour le perfectionnement des saints en vue de l'oeuvre du ministère et de l'édification du corps de Christ, jusqu'à ce que nous soyons tous parvenus à l'unité de la foi et de la connaissance du Fils de Dieu, à l'état d'homme fait, à la mesure de la stature parfaite de Christ, afin que nous ne soyons plus des enfants, flottants et emportés à tout vent de doctrine, par la tromperie des hommes, par leur ruse dans les moyens de séduction, mais que, professant la vérité dans la charité, nous croissions à tous égards en celui qui est le chef, Christ".
+              "And He gave some as apostles, some as prophets, some as evangelists, some as pastors and teachers, for the equipping of the saints for the work of ministry, for the edifying of the body of Christ, till we all come to the unity of the faith and of the knowledge of the Son of God, to a perfect man, to the measure of the stature of the fullness of Christ; that we should no longer be children, tossed to and fro and carried about with every wind of doctrine, by the trickery of men, in the cunning craftiness of deceitful plotting, but, speaking the truth in love, may grow up in all things into Him who is the head—Christ."
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Pour une meilleure compréhension des Saintes Ecritures, servant à votre édification, nous vous invitons donc à lire les brochures, exposés, et lettres circulaires disponibles sur ce site.
+              For a better understanding of the Holy Scriptures, serving for your edification, we therefore invite you to read the brochures, expositions, and circular letters available on this site.
             </p>
           </div>
         </div>
