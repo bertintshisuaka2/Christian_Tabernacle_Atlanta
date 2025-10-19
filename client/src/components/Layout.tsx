@@ -225,7 +225,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Peachtree Corners, GA 30071
               </p>
               <p className="text-sm text-muted-foreground">
-                Email: info@christiantabernacleatlanta.org
+                Email: bertintshisuaka@hotmail.com
                 <br />
                 Phone: (678) 979-6811
               </p>

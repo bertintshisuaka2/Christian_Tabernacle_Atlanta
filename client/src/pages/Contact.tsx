@@ -107,7 +107,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    info@christiantabernacleatlanta.org
+                    bertintshisuaka@hotmail.com
                   </p>
                 </CardContent>
               </Card>
