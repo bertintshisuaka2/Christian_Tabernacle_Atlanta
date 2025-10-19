@@ -188,8 +188,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* The Bible */}
       <section className="py-16">
+        <div className="container max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8">The Bible</h2>
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/bible-logo.png" 
+              alt="Open Bible" 
+              className="w-96 h-auto rounded-lg shadow-xl"
+            />
+          </div>
+          <div className="prose prose-lg max-w-none text-center">
+            <p className="text-muted-foreground leading-relaxed text-lg italic">
+              "All Scripture is inspired by God and is useful to teach us what is true and to make us realize what is wrong in our lives. It corrects us when we are wrong and teaches us to do what is right."
+            </p>
+            <p className="text-muted-foreground text-sm mt-2">2 Timothy 3:16</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-muted/30">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Visit?</h2>
           <p className="text-lg text-muted-foreground mb-8">
