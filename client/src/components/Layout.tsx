@@ -220,14 +220,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
               <p className="text-sm text-muted-foreground mb-2">
-                123 Church Street
+                4350 Peachtree Industrial Blvd
                 <br />
-                Atlanta, GA 30303
+                Peachtree Corners, GA 30071
               </p>
               <p className="text-sm text-muted-foreground">
                 Email: info@christiantabernacleatlanta.org
                 <br />
-                Phone: (404) 555-1234
+                Phone: (678) 979-6811
               </p>
             </div>
           </div>

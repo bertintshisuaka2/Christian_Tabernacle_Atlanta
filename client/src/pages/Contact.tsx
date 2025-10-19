@@ -75,9 +75,9 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    123 Church Street
+                    4350 Peachtree Industrial Blvd
                     <br />
-                    Atlanta, GA 30303
+                    Peachtree Corners, GA 30071
                     <br />
                     United States
                   </p>
@@ -93,7 +93,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    (404) 555-1234
+                    (678) 979-6811
                   </p>
                 </CardContent>
               </Card>
