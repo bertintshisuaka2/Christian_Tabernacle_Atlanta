@@ -35,8 +35,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/">
               <div className="flex items-center gap-3 cursor-pointer">
                 <img src={APP_LOGO} alt="Logo" className="w-10 h-10 object-contain" />
-                <span className="text-xl font-semibold text-foreground">
-                  {APP_TITLE}
+                <span className="text-sm md:text-base font-semibold text-foreground italic">
+                  Matthew 24:14 & Revelation 14:6
                 </span>
               </div>
             </Link>
