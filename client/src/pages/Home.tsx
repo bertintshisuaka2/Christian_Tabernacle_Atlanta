@@ -41,32 +41,33 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-background py-20 md:py-32">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-1">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground uppercase">
-                Christian Tabernacle of Atlanta
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                A place where faith meets fellowship, and everyone belongs.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" asChild>
-                  <Link href="/about">Learn More</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/events">Upcoming Events</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="flex-shrink-0">
-              <img 
-                src="/bible-logo.png" 
-                alt="Open Bible" 
-                className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg shadow-2xl"
-              />
-            </div>
+      <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+        {/* Background Bible Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/bible-logo.png" 
+            alt="Open Bible" 
+            className="w-full h-full object-cover opacity-40"
+          />
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        {/* Overlaid Text Content */}
+        <div className="relative z-10 container h-full flex flex-col justify-center items-center text-center">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-foreground italic">
+            Christian Tabernacle of Atlanta
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 italic">
+            A place where faith meets fellowship, and everyone belongs.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" asChild>
+              <Link href="/about">Learn More</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/events">Upcoming Events</Link>
+            </Button>
           </div>
         </div>
       </section>
