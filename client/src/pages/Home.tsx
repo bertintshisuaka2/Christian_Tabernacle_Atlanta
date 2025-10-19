@@ -59,7 +59,7 @@ export default function Home() {
             Christian Tabernacle of Atlanta
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 italic">
-            A place where faith meets fellowship, and everyone belongs.
+            Hebrews 13:8 "Jesus Christ is the same yesterday, today and forever"
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" asChild>
