@@ -163,8 +163,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Ewald Frank Ministry */}
       <section className="py-16 bg-muted/30">
+        <div className="container max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8">The Ministry of Matthew 24:45-47</h2>
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/ewald-frank.jpg" 
+              alt="Ewald Frank" 
+              className="w-64 h-auto rounded-lg shadow-xl"
+            />
+          </div>
+          <div className="prose prose-lg max-w-none">
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Nous vous exhortons à prendre garde à ces ministères que Dieu a suscité parmi Son peuple, en sachant que Dieu ne se repent pas de ses dons, ni de son appel (Romains 11.29). Mais nous ne voulons pas nous arrêter à un ministère particulier, ou à son représentant, mais nous devons prendre en considération tous les ministères de la Parole auxquels Dieu a pourvu, servant à notre perfectionnement selon ce qu'il est écrit dans Ephésiens 4, versets 11 à 15:
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4 italic">
+              "Et il a donné les uns comme apôtres, les autres comme prophètes, les autres comme évangélistes, les autres comme pasteurs et docteurs, pour le perfectionnement des saints en vue de l'oeuvre du ministère et de l'édification du corps de Christ, jusqu'à ce que nous soyons tous parvenus à l'unité de la foi et de la connaissance du Fils de Dieu, à l'état d'homme fait, à la mesure de la stature parfaite de Christ, afin que nous ne soyons plus des enfants, flottants et emportés à tout vent de doctrine, par la tromperie des hommes, par leur ruse dans les moyens de séduction, mais que, professant la vérité dans la charité, nous croissions à tous égards en celui qui est le chef, Christ".
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Pour une meilleure compréhension des Saintes Ecritures, servant à votre édification, nous vous invitons donc à lire les brochures, exposés, et lettres circulaires disponibles sur ce site.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Visit?</h2>
           <p className="text-lg text-muted-foreground mb-8">
