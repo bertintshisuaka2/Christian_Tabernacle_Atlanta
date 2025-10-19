@@ -28,7 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
+      <header className="bg-background border-b sticky top-0 z-50 shadow-sm">
         <nav className="container py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
