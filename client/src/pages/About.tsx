@@ -145,6 +145,13 @@ export default function About() {
       <section className="py-16">
         <div className="container max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-8">William Branham and His Prophetic Ministry in the End-Time</h2>
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/william-branham.jpg" 
+              alt="William Branham" 
+              className="w-64 h-auto rounded-lg shadow-xl"
+            />
+          </div>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground leading-relaxed mb-4">
               We claim to believe as the Holy Scripture says and acknowledge with thankful hearts that we are now living close to the second coming of Christ. We see Bible prophecies fulfilled as it was at His first coming. The New Testament began with the fulfilment of scriptural prophecies and ends the same way.
