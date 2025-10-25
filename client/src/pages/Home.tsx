@@ -104,26 +104,39 @@ export default function Home() {
         </section>
       )}
 
-      {/* Features Grid */}
+      {/* Chorus Gallery */}
       <section className="py-16">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Discover Our Community
+            Discover Our Chorus
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature) => (
-              <Link key={feature.title} href={feature.link}>
-                <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
-                  <CardHeader>
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                      <feature.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <CardTitle>{feature.title}</CardTitle>
-                    <CardDescription>{feature.description}</CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+            {[
+              { src: '/choir1.jpg', alt: 'Chorus Performance 1' },
+              { src: '/choir2.jpg', alt: 'Chorus Performance 2' },
+              { src: '/choir3.jpg', alt: 'Chorus Performance 3' },
+              { src: '/choir4.jpg', alt: 'Chorus Performance 4' },
+              { src: '/choir5.jpg', alt: 'Chorus Performance 5' },
+            ].map((photo, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
+                <img 
+                  src={photo.src} 
+                  alt={photo.alt} 
+                  className="w-full h-64 object-cover"
+                />
+              </Card>
             ))}
+          </div>
+          
+          {/* Chorus Video */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-center mb-6">Christian Tabernacle of Atlanta Chorus</h3>
+            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+              <p className="text-muted-foreground text-center px-4">
+                Video placeholder - Please upload your 5-minute chorus video<br/>
+                <span className="text-sm">Supported formats: MP4, WebM</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
