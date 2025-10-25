@@ -131,11 +131,17 @@ export default function Home() {
           {/* Chorus Video */}
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-center mb-6">Christian Tabernacle of Atlanta Chorus</h3>
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-              <p className="text-muted-foreground text-center px-4">
-                Video placeholder - Please upload your 5-minute chorus video<br/>
-                <span className="text-sm">Supported formats: MP4, WebM</span>
-              </p>
+            <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/sAygK6HS6GI"
+                title="Christian Tabernacle of Atlanta Chorus"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
