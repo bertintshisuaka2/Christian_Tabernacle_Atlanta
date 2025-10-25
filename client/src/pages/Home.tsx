@@ -104,19 +104,19 @@ export default function Home() {
         </section>
       )}
 
-      {/* Chorus Gallery */}
+      {/* Choir Gallery */}
       <section className="py-16">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Discover Our Chorus
+            Discover Our Choir
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
             {[
-              { src: '/choir1.jpg', alt: 'Chorus Performance 1' },
-              { src: '/choir2.jpg', alt: 'Chorus Performance 2' },
-              { src: '/choir3.jpg', alt: 'Chorus Performance 3' },
-              { src: '/choir4.jpg', alt: 'Chorus Performance 4' },
-              { src: '/choir5.jpg', alt: 'Chorus Performance 5' },
+              { src: '/choir1.jpg', alt: 'Choir Performance 1' },
+              { src: '/choir2.jpg', alt: 'Choir Performance 2' },
+              { src: '/choir3.jpg', alt: 'Choir Performance 3' },
+              { src: '/choir4.jpg', alt: 'Choir Performance 4' },
+              { src: '/choir5.jpg', alt: 'Choir Performance 5' },
             ].map((photo, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
                 <img 
@@ -128,15 +128,15 @@ export default function Home() {
             ))}
           </div>
           
-          {/* Chorus Video */}
+          {/* Choir Video */}
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-6">Christian Tabernacle of Atlanta Chorus</h3>
+            <h3 className="text-2xl font-bold text-center mb-6">Christian Tabernacle of Atlanta Choir</h3>
             <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
               <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/E74GipbCfqw"
-                title="Christian Tabernacle of Atlanta Chorus"
+                title="Christian Tabernacle of Atlanta Choir"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
