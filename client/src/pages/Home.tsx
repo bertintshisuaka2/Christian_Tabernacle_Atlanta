@@ -5,11 +5,45 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Calendar, Heart, BookOpen, Users, Clock, MapPin } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { format } from "date-fns";
+import { useState, useEffect } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 
 export default function Home() {
   const { data: upcomingEvents } = trpc.events.upcoming.useQuery();
   const { data: recentSermons } = trpc.sermons.list.useQuery();
   const { data: serviceTimes } = trpc.serviceTimes.list.useQuery();
+  const [isMuted, setIsMuted] = useState(false);
+  const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    // Create audio element for background music
+    const audio = new Audio('https://www.bensound.com/bensound-music/bensound-slowmotion.mp3');
+    audio.loop = true;
+    audio.volume = 0.3;
+    setAudioElement(audio);
+    
+    // Auto-play on mount (may be blocked by browser)
+    audio.play().catch(() => {
+      setIsMuted(true);
+    });
+
+    return () => {
+      audio.pause();
+      audio.src = '';
+    };
+  }, []);
+
+  const toggleMute = () => {
+    if (audioElement) {
+      if (isMuted) {
+        audioElement.play();
+        setIsMuted(false);
+      } else {
+        audioElement.pause();
+        setIsMuted(true);
+      }
+    }
+  };
 
   const features = [
     {
@@ -42,16 +76,25 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
-        {/* Background Bible Image */}
-        <div className="absolute inset-0">
+        {/* Background Bible Image with Animation */}
+        <div className="absolute inset-0 animate-[ken-burns_20s_ease-in-out_infinite]">
           <img 
             src="/bible-logo.png" 
             alt="Open Bible" 
             className="w-full h-full object-cover opacity-60"
           />
-          {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/30"></div>
+          {/* Light overlay */}
+          <div className="absolute inset-0 bg-white/20"></div>
         </div>
+        
+        {/* Music Control Button */}
+        <button
+          onClick={toggleMute}
+          className="absolute top-4 right-4 z-20 p-3 rounded-full bg-white/80 hover:bg-white transition-colors shadow-lg"
+          aria-label={isMuted ? 'Unmute music' : 'Mute music'}
+        >
+          {isMuted ? <VolumeX className="w-6 h-6 text-primary" /> : <Volume2 className="w-6 h-6 text-primary" />}
+        </button>
         
         {/* Overlaid Text Content */}
         <div className="relative z-10 container h-full flex flex-col justify-center items-center text-center">

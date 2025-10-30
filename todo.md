@@ -35,3 +35,10 @@
 - [x] Make navigation menu bar bigger
 - [x] Change color scheme to white and sky blue
 
+
+
+## Latest Changes
+- [x] Make entire website white background
+- [x] Add animated/moving hero section
+- [x] Add gospel song background music to hero
+
