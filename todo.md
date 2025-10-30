@@ -47,3 +47,8 @@
 ## Bug Fixes
 - [x] Fix service times cards alignment - center them properly
 
+
+
+## Documentation
+- [x] Create comprehensive README.md file
+
