@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Staff from "./pages/Staff";
 import Sermons from "./pages/Sermons";
 import Events from "./pages/Events";
 import Prayer from "./pages/Prayer";
@@ -19,8 +20,8 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/sermons" component={Sermons} />
+        <Route path={"/about"} component={About} />
+      <Route path={"/staff"} component={Staff} />       <Route path="/sermons" component={Sermons} />
         <Route path="/events" component={Events} />
         <Route path="/prayer" component={Prayer} />
         <Route path="/contact" component={Contact} />

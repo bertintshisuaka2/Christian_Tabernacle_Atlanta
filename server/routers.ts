@@ -370,6 +370,60 @@ export const appRouter = router({
         return { success: true };
       }),
   }),
+
+  // Staff management
+  staff: router({
+    list: publicProcedure.query(async () => {
+      return await db.getStaff();
+    }),
+    
+    getById: publicProcedure
+      .input(z.object({ id: z.string() }))
+      .query(async ({ input }) => {
+        return await db.getStaffById(input.id);
+      }),
+    
+    create: adminProcedure
+      .input(z.object({
+        name: z.string(),
+        title: z.string(),
+        bio: z.string().optional(),
+        photoUrl: z.string().optional(),
+        email: z.string().email().optional(),
+        phone: z.string().optional(),
+        displayOrder: z.number().optional(),
+      }))
+      .mutation(async ({ input }) => {
+        const id = nanoid();
+        await db.createStaff({ id, ...input });
+        return { id, success: true };
+      }),
+    
+    update: adminProcedure
+      .input(z.object({
+        id: z.string(),
+        name: z.string().optional(),
+        title: z.string().optional(),
+        bio: z.string().optional(),
+        photoUrl: z.string().optional(),
+        email: z.string().optional(),
+        phone: z.string().optional(),
+        displayOrder: z.number().optional(),
+        isActive: z.boolean().optional(),
+      }))
+      .mutation(async ({ input }) => {
+        const { id, ...data } = input;
+        await db.updateStaff(id, data);
+        return { success: true };
+      }),
+    
+    delete: adminProcedure
+      .input(z.object({ id: z.string() }))
+      .mutation(async ({ input }) => {
+        await db.deleteStaff(input.id);
+        return { success: true };
+      }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

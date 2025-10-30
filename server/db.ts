@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, staff, InsertStaff } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -292,3 +292,39 @@ export async function deleteServiceTime(id: string) {
   if (!db) throw new Error("Database not available");
   await db.delete(serviceTimes).where(eq(serviceTimes.id, id));
 }
+
+
+// Staff
+export async function createStaff(staffMember: InsertStaff) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(staff).values(staffMember);
+}
+
+export async function getStaff() {
+  const db = await getDb();
+  if (!db) return [];
+  return await db.select().from(staff)
+    .where(eq(staff.isActive, true))
+    .orderBy(staff.displayOrder);
+}
+
+export async function getStaffById(id: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(staff).where(eq(staff.id, id)).limit(1);
+  return result[0];
+}
+
+export async function updateStaff(id: string, data: Partial<InsertStaff>) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.update(staff).set(data).where(eq(staff.id, id));
+}
+
+export async function deleteStaff(id: string) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.delete(staff).where(eq(staff.id, id));
+}
+

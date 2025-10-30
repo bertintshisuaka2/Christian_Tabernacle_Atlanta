@@ -15,6 +15,13 @@
       "when": 1760847575510,
       "tag": "0001_normal_roxanne_simpson",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1761818386983,
+      "tag": "0002_lively_joseph",
+      "breakpoints": true
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { mysqlEnum, mysqlTable, text, timestamp, varchar, int, boolean } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -149,3 +149,23 @@ export const serviceTimes = mysqlTable("serviceTimes", {
 
 export type ServiceTime = typeof serviceTimes.$inferSelect;
 export type InsertServiceTime = typeof serviceTimes.$inferInsert;
+
+
+// Staff table for pastors and church staff
+export const staff = mysqlTable("staff", {
+  id: varchar("id", { length: 64 }).primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  title: varchar("title", { length: 255 }).notNull(),
+  bio: text("bio"),
+  photoUrl: text("photoUrl"),
+  email: varchar("email", { length: 320 }),
+  phone: varchar("phone", { length: 50 }),
+  displayOrder: int("displayOrder").default(0),
+  isActive: boolean("isActive").default(true),
+  createdAt: timestamp("createdAt").defaultNow(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow(),
+});
+
+export type Staff = typeof staff.$inferSelect;
+export type InsertStaff = typeof staff.$inferInsert;
+
