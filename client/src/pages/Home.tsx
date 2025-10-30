@@ -121,9 +121,9 @@ export default function Home() {
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-8">Service Times</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="flex flex-wrap justify-center gap-6">
                 {serviceTimes.map((service) => (
-                  <Card key={service.id}>
+                  <Card key={service.id} className="w-full md:w-80">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
                         <Clock className="w-5 h-5 text-primary" />

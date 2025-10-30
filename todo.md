@@ -42,3 +42,8 @@
 - [x] Add animated/moving hero section
 - [x] Add gospel song background music to hero
 
+
+
+## Bug Fixes
+- [x] Fix service times cards alignment - center them properly
+
