@@ -29,8 +29,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-background border-b sticky top-0 z-50 shadow-sm">
-        <nav className="container py-4">
+      <header className="bg-background border-b sticky top-0 z-50 shadow-md">
+        <nav className="container py-6">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/">
@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
                   <span
-                    className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
+                    className={`text-base font-medium transition-colors hover:text-primary cursor-pointer ${
                       isActive(link.href)
                         ? "text-primary"
                         : "text-muted-foreground"

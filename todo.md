@@ -23,3 +23,15 @@
 ## Pending Features
 - [x] Pastors and staff section with photos and biographies
 
+
+
+## New Changes
+- [ ] Make navigation menu bar bigger
+- [ ] Change color scheme to white and sky blue
+
+
+
+## New Design Changes
+- [x] Make navigation menu bar bigger
+- [x] Change color scheme to white and sky blue
+
