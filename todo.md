@@ -61,3 +61,7 @@
 - [x] Remove Youth Pastor (third staff member on the right)
 - [x] Update first pastor name to Bertin Tshisuaka
 
+
+- [x] Remove Associate Pastor (second staff member on the right)
+- [x] Update Pastor Bertin's biography with end-time believer message
+
