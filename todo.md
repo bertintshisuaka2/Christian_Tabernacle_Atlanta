@@ -71,3 +71,6 @@
 
 - [x] Change signature to "Brother Bertin Tshisuaka"
 
+
+- [x] Update Pastor Bertin's email to bertintshisuaka@hotmail.com
+
