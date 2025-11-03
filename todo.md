@@ -74,3 +74,6 @@
 
 - [x] Update Pastor Bertin's email to bertintshisuaka@hotmail.com
 
+
+- [x] Replace all 5 choir images with uploaded church choir photo
+
