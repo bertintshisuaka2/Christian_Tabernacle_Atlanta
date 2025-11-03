@@ -65,3 +65,6 @@
 - [x] Remove Associate Pastor (second staff member on the right)
 - [x] Update Pastor Bertin's biography with end-time believer message
 
+
+- [x] Add signature "Bertin Tshisuaka" at bottom of pastor biography
+

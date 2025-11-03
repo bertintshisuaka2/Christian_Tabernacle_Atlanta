@@ -49,7 +49,10 @@ export default function Staff() {
                     <p className="text-lg mb-4 italic opacity-80">{staff.title}</p>
                     
                     {staff.bio && (
-                      <p className="mb-4 italic leading-relaxed">{staff.bio}</p>
+                      <div className="mb-4">
+                        <p className="italic leading-relaxed">{staff.bio}</p>
+                        <p className="text-right mt-4 italic font-semibold">— {staff.name}</p>
+                      </div>
                     )}
                     
                     {/* Contact Info */}
