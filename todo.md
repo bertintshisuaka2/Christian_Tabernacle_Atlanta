@@ -82,3 +82,8 @@
 - [x] Set up i18n internationalization support
 - [x] Translate all website content to French
 
+
+
+## New Updates
+- [x] Update upcoming events section with pastor preaching photo
+
