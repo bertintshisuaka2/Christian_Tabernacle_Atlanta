@@ -4,21 +4,24 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { APP_TITLE, APP_LOGO, getLoginUrl } from "@/const";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const { user, isAuthenticated, logout } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/staff", label: "Staff" },
-    { href: "/sermons", label: "Sermons" },
-    { href: "/events", label: "Events" },
-    { href: "/prayer", label: "Prayer" },
-    { href: "/contact", label: "Contact" },
-    { href: "/give", label: "Give" },
+    { href: "/", label: t('nav.home') },
+    { href: "/about", label: t('nav.about') },
+    { href: "/staff", label: t('nav.staff') },
+    { href: "/sermons", label: t('nav.sermons') },
+    { href: "/events", label: t('nav.events') },
+    { href: "/prayer", label: t('nav.prayer') },
+    { href: "/contact", label: t('nav.contact') },
+    { href: "/give", label: t('nav.give') },
   ];
 
   const isActive = (href: string) => {
@@ -61,6 +64,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Auth Section */}
             <div className="hidden md:flex items-center gap-3">
+              <LanguageSwitcher />
               {isAuthenticated ? (
                 <>
                   <span className="text-sm text-muted-foreground">
@@ -69,17 +73,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {user?.role === "admin" && (
                     <Link href="/admin">
                       <Button variant="outline" size="sm">
-                        Admin
+                        {t('nav.admin')}
                       </Button>
                     </Link>
                   )}
                   <Button variant="ghost" size="sm" onClick={() => logout()}>
-                    Logout
+                    {t('nav.logout')}
                   </Button>
                 </>
               ) : (
                 <Button size="sm" asChild>
-                  <a href={getLoginUrl()}>Sign In</a>
+                  <a href={getLoginUrl()}>{t('nav.signin')}</a>
                 </Button>
               )}
             </div>

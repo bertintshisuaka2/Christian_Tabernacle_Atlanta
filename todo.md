@@ -77,3 +77,8 @@
 
 - [x] Replace all 5 choir images with uploaded church choir photo
 
+
+- [x] Add language switcher for English and French translation
+- [x] Set up i18n internationalization support
+- [x] Translate all website content to French
+

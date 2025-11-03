@@ -7,8 +7,10 @@ import { trpc } from "@/lib/trpc";
 import { format } from "date-fns";
 import { useState, useEffect } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   const { data: upcomingEvents } = trpc.events.upcoming.useQuery();
   const { data: recentSermons } = trpc.sermons.list.useQuery();
   const { data: serviceTimes } = trpc.serviceTimes.list.useQuery();
@@ -99,17 +101,17 @@ export default function Home() {
         {/* Overlaid Text Content */}
         <div className="relative z-10 container h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-foreground italic">
-            Christian Tabernacle of Atlanta
+            {t('hero.title')}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 italic">
-            Hebrews 13:8 "Jesus Christ is the same yesterday, today and forever"
+            {t('hero.subtitle')}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" asChild>
-              <Link href="/about">Learn More</Link>
+              <Link href="/about">{t('hero.learnMore')}</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/events">Upcoming Events</Link>
+              <Link href="/events">{t('hero.upcomingEvents')}</Link>
             </Button>
           </div>
         </div>
@@ -120,7 +122,7 @@ export default function Home() {
         <section className="py-12 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8">Service Times</h2>
+              <h2 className="text-3xl font-bold text-center mb-8">{t('service.title')}</h2>
               <div className="flex flex-wrap justify-center gap-6">
                 {serviceTimes.map((service) => (
                   <Card key={service.id} className="w-full md:w-80">
@@ -151,7 +153,7 @@ export default function Home() {
       <section className="py-16">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Discover Our Choir
+            {t('choir.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
             {[
@@ -173,7 +175,7 @@ export default function Home() {
           
           {/* Choir Video */}
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-6">Christian Tabernacle of Atlanta Choir</h3>
+            <h3 className="text-2xl font-bold text-center mb-6">{t('choir.videoTitle')}</h3>
             <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
               <iframe
                 width="100%"
@@ -195,9 +197,9 @@ export default function Home() {
         <section className="py-16 bg-muted/30">
           <div className="container">
             <div className="flex justify-between items-center mb-8">
-              <h2 className="text-3xl font-bold">Upcoming Events</h2>
+              <h2 className="text-3xl font-bold">{t('events.title')}</h2>
               <Button variant="outline" asChild>
-                <Link href="/events">View All</Link>
+                <Link href="/events">{t('events.viewAll')}</Link>
               </Button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -242,9 +244,9 @@ export default function Home() {
         <section className="py-16">
           <div className="container">
             <div className="flex justify-between items-center mb-8">
-              <h2 className="text-3xl font-bold">Recent Sermons</h2>
+              <h2 className="text-3xl font-bold">{t('sermons.title')}</h2>
               <Button variant="outline" asChild>
-                <Link href="/sermons">View All</Link>
+                <Link href="/sermons">{t('sermons.viewAll')}</Link>
               </Button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -280,20 +282,20 @@ export default function Home() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Join Us This Weekend
+            {t('cta.title')}
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Saturday 6:00 PM - 8:00 PM | Sunday 10:00 AM - 1:00 PM
+            {t('cta.subtitle')}
           </p>
           <p className="text-lg mb-8 opacity-90">
-            Experience worship, community, and hope. Everyone is welcome.
+            {t('cta.description')}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/contact">Plan Your Visit</Link>
+              <Link href="/contact">{t('cta.planVisit')}</Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-              <Link href="/give">Give Online</Link>
+              <Link href="/give">{t('cta.giveOnline')}</Link>
             </Button>
           </div>
         </div>
