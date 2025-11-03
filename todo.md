@@ -68,3 +68,6 @@
 
 - [x] Add signature "Bertin Tshisuaka" at bottom of pastor biography
 
+
+- [x] Change signature to "Brother Bertin Tshisuaka"
+

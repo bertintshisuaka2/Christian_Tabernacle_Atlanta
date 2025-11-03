@@ -51,7 +51,7 @@ export default function Staff() {
                     {staff.bio && (
                       <div className="mb-4">
                         <p className="italic leading-relaxed">{staff.bio}</p>
-                        <p className="text-right mt-4 italic font-semibold">— {staff.name}</p>
+                        <p className="text-right mt-4 italic font-semibold">— Brother {staff.name}</p>
                       </div>
                     )}
                     
