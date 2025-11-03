@@ -52,3 +52,12 @@
 ## Documentation
 - [x] Create comprehensive README.md file
 
+
+
+## Content Updates
+- [x] Replace Pastor John Smith photo with new uploaded image
+
+
+- [x] Remove Youth Pastor (third staff member on the right)
+- [x] Update first pastor name to Bertin Tshisuaka
+
